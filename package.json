@@ -1,19 +1,23 @@
+
 {
+  "homepage": "https://moh0335577-dotcom.github.io/pharmacy-website",
   "name": "pharmacy-website",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint src --ext js,jsx",
-    "format": "prettier --write \"src/**/*.{js,jsx,css}\""
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "lint": "eslint src --ext js,jsx",
+  "format": "prettier --write \"src/**/*.{js,jsx,css}\"",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "dependencies": {
+    "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "framer-motion": "^10.16.4",
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.16.0"
   },
@@ -21,8 +25,9 @@
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",
-    "vite": "^4.4.5",
     "eslint": "^8.45.0",
-    "prettier": "^3.0.0"
+    "gh-pages": "^6.3.0",
+    "prettier": "^3.0.0",
+    "vite": "^4.4.5"
   }
 }
