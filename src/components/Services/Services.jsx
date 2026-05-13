@@ -1,5 +1,5 @@
 /**
- * Services Section Component - قسم الخدمات
+ * Services Section Component - قسم الخدمات (محدّث - إزالة توصيل منزلي)
  */
 
 import { motion } from 'framer-motion';
@@ -7,7 +7,6 @@ import {
   FaPills,
   FaUserMd,
   FaHeartbeat,
-  FaTruck,
 } from 'react-icons/fa';
 import Card from '../Card/Card';
 import Section from '../Section/Section';
@@ -35,13 +34,6 @@ const Services = () => {
       description: 'خدمة قياس ضغط الدم المجانية',
       icon: FaHeartbeat,
       color: '#1E9B8E',
-    },
-    {
-      id: 4,
-      title: 'توصيل منزلي',
-      description: 'توصيل سريع وآمن لباب منزلك',
-      icon: FaTruck,
-      color: '#008B8B',
     },
   ];
 

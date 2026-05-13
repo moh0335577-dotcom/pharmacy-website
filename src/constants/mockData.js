@@ -1,5 +1,5 @@
 /**
- * Mock Data - بيانات تجريبية
+ * Mock Data - بيانات تجريبية (محدّثة - إزالة توصيل منزلي)
  */
 
 export const PHARMACY_INFO = {
@@ -33,70 +33,6 @@ export const SERVICES = [
     icon: 'FaHeartbeat',
     color: '#1E9B8E',
   },
-  {
-    id: 4,
-    title: 'توصيل منزلي',
-    description: 'توصيل سريع وآمن لباب منزلك',
-    icon: 'FaTruck',
-    color: '#008B8B',
-  },
-];
-
-export const PRODUCTS = [
-  {
-    id: 1,
-    name: 'فيتامين C 500mg',
-    category: 'الأدوية',
-    price: 25,
-    image: '💊',
-    rating: 4.5,
-    inStock: true,
-  },
-  {
-    id: 2,
-    name: 'مسكن الألم',
-    category: 'الأدوية',
-    price: 15,
-    image: '💊',
-    rating: 4.8,
-    inStock: true,
-  },
-  {
-    id: 3,
-    name: 'كريم الوجه',
-    category: 'مستحضرات تجميل',
-    price: 45,
-    image: '🧴',
-    rating: 4.6,
-    inStock: true,
-  },
-  {
-    id: 4,
-    name: 'سيرم العناية بالبشرة',
-    category: 'مستحضرات العناية بالبشرة',
-    price: 55,
-    image: '🧪',
-    rating: 4.9,
-    inStock: true,
-  },
-  {
-    id: 5,
-    name: 'مرطب الجسم',
-    category: 'مستحضرات العناية بالبشرة',
-    price: 35,
-    image: '🧴',
-    rating: 4.7,
-    inStock: true,
-  },
-  {
-    id: 6,
-    name: 'كحل العين',
-    category: 'مستحضرات تجميل',
-    price: 20,
-    image: '✨',
-    rating: 4.4,
-    inStock: true,
-  },
 ];
 
 export const CATEGORIES = [
@@ -119,6 +55,8 @@ export const CATEGORIES = [
     color: '#1E9B8E',
   },
 ];
+
+export const PRODUCTS = [];
 
 export const GALLERY = [
   {

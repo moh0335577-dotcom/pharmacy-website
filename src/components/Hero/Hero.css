@@ -1,7 +1,6 @@
 .hero {
-  padding: 6rem 0;
+  padding: 5rem 0;
   background: linear-gradient(135deg, #F0F9F8 0%, #E0F5F0 100%);
-  min-height: 600px;
   display: flex;
   align-items: center;
 }
@@ -9,49 +8,30 @@
 .hero-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 2.5rem;
   align-items: center;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .hero-title {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 2.25rem;
+  font-weight: 800;
   color: #1F2937;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .hero-title .highlight {
   color: #20B2AA;
-  position: relative;
-}
-
-.hero-title .highlight::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(90deg, #20B2AA, #7FD8BE);
-  border-radius: 2px;
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   color: #6B7280;
-  line-height: 1.8;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
 }
 
 .hero-image {
@@ -60,44 +40,60 @@
   align-items: center;
 }
 
-.hero-illustration {
-  font-size: 300px;
-  animation: float 3s ease-in-out infinite;
+.icons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+  max-width: 520px;
 }
 
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
+.icon-wrap {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 8px 20px rgba(32, 178, 170, 0.08);
+  border: 1px solid #E0F5F0;
 }
 
-@media (max-width: 768px) {
-  .hero {
-    padding: 3rem 0;
-    min-height: auto;
-  }
+.hero-icon {
+  font-size: 2rem;
+  color: #20B2AA;
+}
 
-  .hero-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+.icon-label {
+  font-size: 0.75rem;
+  color: #6B7280;
+}
+
+@media (max-width: 1024px) {
+  .icons-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .hero-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
-  .hero-subtitle {
-    font-size: 1rem;
+  .icons-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 360px;
+    margin: 0 auto;
   }
 
-  .hero-illustration {
-    font-size: 150px;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
+  .hero-title {
+    font-size: 1.5rem;
   }
 }
