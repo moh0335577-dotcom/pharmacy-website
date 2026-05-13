@@ -6,6 +6,9 @@ import { useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import Services from './components/Services/Services';
+import Products from './components/Products/Products';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
@@ -16,6 +19,9 @@ function App() {
       <main>
         <Hero />
         <Services />
+        <Products />
+        <About />
+        <Contact />
       </main>
       <Footer />
     </div>

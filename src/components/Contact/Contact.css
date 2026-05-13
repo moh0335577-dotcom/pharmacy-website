@@ -1,0 +1,132 @@
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.contact-method-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.contact-method-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(32, 178, 170, 0.2);
+}
+
+.method-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-method-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #1F2937;
+}
+
+.contact-method-card p {
+  color: #6B7280;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.method-btn {
+  width: 100%;
+}
+
+.contact-form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-card {
+  padding: 2rem;
+  height: 100%;
+}
+
+.contact-form-card h2 {
+  margin-bottom: 1.5rem;
+  color: #1F2937;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #1F2937;
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem 1rem;
+  border: 2px solid #E0F5F0;
+  border-radius: 0.5rem;
+  font-family: 'Cairo', sans-serif;
+  font-size: 1rem;
+  color: #1F2937;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #20B2AA;
+  box-shadow: 0 0 0 3px rgba(32, 178, 170, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9CA3AF;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  margin-top: 1rem;
+}
+
+@media (max-width: 968px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-methods {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    gap: 2rem;
+  }
+
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-card {
+    padding: 1.5rem;
+  }
+}
