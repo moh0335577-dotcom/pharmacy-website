@@ -96,11 +96,16 @@ const About = () => {
             <motion.div
               key={item.id}
               className="gallery-item"
+              onClick={() => item.imageUrl && window.open(item.imageUrl, '_blank')}
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
             >
               <div className="gallery-image">
-                <span className="gallery-emoji">{item.image}</span>
+                {item.imageUrl ? (
+                  <img src={item.imageUrl} alt={item.title} className="gallery-img" />
+                ) : (
+                  <span className="gallery-emoji">{item.image}</span>
+                )}
               </div>
               <h3>{item.title}</h3>
               <p>{item.description}</p>

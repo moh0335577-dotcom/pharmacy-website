@@ -64,6 +64,15 @@ export const makeCall = (phoneNumber) => {
 };
 
 /**
+ * فتح الموقع على الخريطة
+ */
+export const openMap = (mapUrl) => {
+  if (mapUrl) {
+    window.open(mapUrl, '_blank');
+  }
+};
+
+/**
  * فتح الفيسبوك
  */
 export const openFacebook = (facebookUrl) => {

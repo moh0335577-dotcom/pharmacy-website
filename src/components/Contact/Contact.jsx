@@ -10,7 +10,7 @@ import Card from '../Card/Card';
 import Button from '../Button/Button';
 import Container from '../Container/Container';
 import { PHARMACY_INFO } from '../../constants/mockData';
-import { openWhatsApp, makeCall, openFacebook } from '../../utils/helpers';
+import { openWhatsApp, makeCall, openFacebook, openMap } from '../../utils/helpers';
 import { fadeInUp, containerVariants, itemVariants } from '../../constants/animations';
 import './Contact.css';
 
@@ -47,7 +47,7 @@ const Contact = () => {
       icon: FaMapMarkerAlt,
       title: 'العنوان',
       value: PHARMACY_INFO.location,
-      action: () => { },
+      action: () => openMap(PHARMACY_INFO.locationUrl),
       color: '#EF4444',
     },
   ];

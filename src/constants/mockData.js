@@ -8,6 +8,7 @@ export const PHARMACY_INFO = {
   whatsapp: '0958456370',
   facebook: 'https://www.facebook.com/share/1QFL8igLVE/?mibextid=wwXIfr',
   location: 'السيدة زينب – حجيرة – حي غربة',
+  locationUrl: 'https://maps.app.goo.gl/QFrQ3bXjVAaUdHWL9',
   email: 'info@shahda-pharmacy.com',
 };
 
@@ -62,35 +63,41 @@ export const GALLERY = [
   {
     id: 1,
     title: 'الواجهة الأمامية',
-    image: '🏪',
+    imageUrl: '/images/pharmacy1.jpg',
     description: 'واجهة الصيدلية الأنيقة',
   },
   {
     id: 2,
     title: 'قسم الأدوية',
-    image: '💊',
+    imageUrl: '/images/pharmacy3.jpg',
     description: 'قسم الأدوية المنظم',
   },
   {
     id: 3,
     title: 'مستحضرات التجميل',
-    image: '💄',
+    imageUrl: '/images/pharmacy2.jpg',
     description: 'قسم مستحضرات التجميل',
   },
   {
     id: 4,
+    title: 'مستحضرات تجميل إضافية',
+    imageUrl: '/images/pharmacy4.jpg',
+    description: 'صورة إضافية لمستحضرات التجميل',
+  },
+  {
+    id: 5,
     title: 'مكتب الاستشارات',
     image: '🏥',
     description: 'مكتب الاستشارات الطبية',
   },
   {
-    id: 5,
+    id: 6,
     title: 'منطقة الانتظار',
     image: '🪑',
     description: 'منطقة انتظار مريحة',
   },
   {
-    id: 6,
+    id: 7,
     title: 'مكتب الخدمات',
     image: '🪟',
     description: 'مكتب خدمة العملاء',
