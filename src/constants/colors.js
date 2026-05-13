@@ -1,25 +1,29 @@
 /**
  * Color Constants - ألوان موحدة للمشروع
- * Medical/Pharmacy Theme Colors
+ * Pharmacy Theme - تيركواز وأخضر فاتح
  */
 
 export const COLORS = {
-  // Primary Colors - ألوان أساسية
-  primary: '#10B981', // أخضر طبي
-  primaryLight: '#D1FAE5', // أخضر فاتح
-  primaryDark: '#059669', // أخضر غامق
+  // Primary Colors - ألوان أساسية (تيركواز)
+  primary: '#20B2AA', // تيركواز فاتح (المصري)
+  primaryLight: '#AFEEEE', // تيركواز خفيف جداً
+  primaryDark: '#008B8B', // تيركواز غامق
 
-  // Secondary Colors - ألوان ثانوية
-  secondary: '#3B82F6', // أزرق فاتح
-  secondaryLight: '#DBEAFE', // أزرق خفيف جداً
-  secondaryDark: '#1D4ED8', // أزرق غامق
+  // Secondary Colors - ألوان ثانوية (أخضر فاتح)
+  secondary: '#7FD8BE', // أخضر فاتح
+  secondaryLight: '#E0F5F0', // أخضر خفيف جداً
+  secondaryDark: '#5DBFA8', // أخضر غامق
 
-  // Neutral Colors - ألوان محايدة
+  // Accent Colors
+  accent: '#1E9B8E', // تيركواز متوسط
+  accentLight: '#D0F0ED', // أخضر فاتح جداً
+
+  // Neutral Colors
   white: '#FFFFFF',
   black: '#000000',
   gray50: '#F9FAFB',
-  gray100: '#F4FBFB', // خلفية الموقع
-  gray200: '#E5E7EB',
+  gray100: '#F0F9F8', // خلفية الموقع
+  gray200: '#E0F5F0',
   gray300: '#D1D5DB',
   gray400: '#9CA3AF',
   gray500: '#6B7280',
@@ -29,10 +33,10 @@ export const COLORS = {
   gray900: '#111827',
 
   // Status Colors
-  success: '#10B981',
+  success: '#20B2AA',
   warning: '#F59E0B',
   error: '#EF4444',
-  info: '#3B82F6',
+  info: '#20B2AA',
 
   // Text Colors
   textPrimary: '#1F2937',
@@ -41,11 +45,11 @@ export const COLORS = {
 };
 
 export const SHADOWS = {
-  sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
-  md: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-  lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
-  xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
-  soft: '0 4px 12px rgba(16, 185, 129, 0.15)',
+  sm: '0 1px 2px 0 rgba(32, 178, 170, 0.05)',
+  md: '0 4px 6px -1px rgba(32, 178, 170, 0.1)',
+  lg: '0 10px 15px -3px rgba(32, 178, 170, 0.15)',
+  xl: '0 20px 25px -5px rgba(32, 178, 170, 0.2)',
+  soft: '0 4px 12px rgba(32, 178, 170, 0.2)',
 };
 
 export const TRANSITIONS = {

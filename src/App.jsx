@@ -2,6 +2,7 @@
  * App Component - المكون الرئيسي للتطبيق
  */
 
+import { useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import Services from './components/Services/Services';

@@ -16,7 +16,7 @@ html {
 
 body {
   font-family: 'Cairo', sans-serif;
-  background: linear-gradient(135deg, #F4FBFB 0%, #F9FAFB 100%);
+  background: linear-gradient(135deg, #F0F9F8 0%, #FFFFFF 100%);
   color: #1F2937;
   direction: rtl;
   line-height: 1.6;
@@ -58,20 +58,25 @@ button:hover {
 }
 
 ::-webkit-scrollbar-track {
-  background: #F4FBFB;
+  background: #F0F9F8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #10B981;
+  background: #20B2AA;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #059669;
+  background: #1E9B8E;
 }
 
 /* Selection */
 ::selection {
-  background: #10B981;
+  background: #20B2AA;
   color: white;
+}
+
+/* Smooth transitions */
+button, a, input, textarea {
+  transition: all 0.3s ease;
 }

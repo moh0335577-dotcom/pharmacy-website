@@ -5,22 +5,29 @@
 import { motion } from 'framer-motion';
 import {
   FaPhone,
-  FaEnvelope,
+  FaWhatsapp,
   FaMapMarkerAlt,
   FaFacebook,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedin,
 } from 'react-icons/fa';
 import Container from '../Container/Container';
+import { PHARMACY_INFO } from '../../constants/mockData';
+import { openWhatsApp, makeCall, openFacebook } from '../../utils/helpers';
 import './Footer.css';
 
 const Footer = () => {
-  const socialLinks = [
-    { icon: FaFacebook, href: '#' },
-    { icon: FaTwitter, href: '#' },
-    { icon: FaInstagram, href: '#' },
-    { icon: FaLinkedin, href: '#' },
+  const contactOptions = [
+    {
+      icon: FaPhone,
+      label: 'اتصال',
+      action: () => makeCall(PHARMACY_INFO.phone),
+      color: '#20B2AA',
+    },
+    {
+      icon: FaWhatsapp,
+      label: 'واتس آب',
+      action: () => openWhatsApp(PHARMACY_INFO.whatsapp),
+      color: '#25D366',
+    },
   ];
 
   return (
@@ -42,14 +49,30 @@ const Footer = () => {
             <h4>معلومات التواصل</h4>
             <div className="contact-info">
               <p>
-                <FaPhone /> +966 50 123 4567
+                <FaPhone /> {PHARMACY_INFO.phone}
               </p>
               <p>
-                <FaEnvelope /> info@shahda-pharmacy.com
+                <FaMapMarkerAlt /> {PHARMACY_INFO.location}
               </p>
-              <p>
-                <FaMapMarkerAlt /> الرياض - المملكة العربية السعودية
-              </p>
+            </div>
+            <div className="contact-buttons">
+              {contactOptions.map((option, index) => {
+                const Icon = option.icon;
+                return (
+                  <motion.button
+                    key={index}
+                    className="contact-btn"
+                    style={{ color: option.color }}
+                    onClick={option.action}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                    title={option.label}
+                  >
+                    <Icon />
+                    <span>{option.label}</span>
+                  </motion.button>
+                );
+              })}
             </div>
           </div>
 
@@ -59,27 +82,20 @@ const Footer = () => {
               <li><a href="#home">الرئيسية</a></li>
               <li><a href="#services">الخدمات</a></li>
               <li><a href="#products">المنتجات</a></li>
-              <li><a href="#contact">اتصل بنا</a></li>
+              <li><a href="#about">من نحن</a></li>
             </ul>
           </div>
 
           <div className="footer-section">
             <h4>تابعنا</h4>
-            <div className="social-links">
-              {socialLinks.map((link, index) => {
-                const Icon = link.icon;
-                return (
-                  <motion.a
-                    key={index}
-                    href={link.href}
-                    whileHover={{ scale: 1.2 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Icon />
-                  </motion.a>
-                );
-              })}
-            </div>
+            <motion.button
+              className="facebook-btn"
+              onClick={() => openFacebook(PHARMACY_INFO.facebook)}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <FaFacebook /> الفيسبوك
+            </motion.button>
           </div>
         </div>
 

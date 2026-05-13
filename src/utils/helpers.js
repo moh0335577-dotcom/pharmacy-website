@@ -47,3 +47,25 @@ export const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 export const cleanString = (str) => {
   return str.trim().replace(/\s+/g, ' ');
 };
+
+/**
+ * فتح الواتس أب
+ */
+export const openWhatsApp = (phoneNumber) => {
+  const message = encodeURIComponent('مرحباً، أود الاستفسار عن المنتجات');
+  window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+};
+
+/**
+ * فتح المكالمة العادية
+ */
+export const makeCall = (phoneNumber) => {
+  window.location.href = `tel:${phoneNumber}`;
+};
+
+/**
+ * فتح الفيسبوك
+ */
+export const openFacebook = (facebookUrl) => {
+  window.open(facebookUrl, '_blank');
+};

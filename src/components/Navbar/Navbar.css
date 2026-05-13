@@ -1,6 +1,6 @@
 .navbar {
   background: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(32, 178, 170, 0.08);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -21,7 +21,7 @@
   gap: 0.5rem;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #10B981;
+  color: #20B2AA;
 }
 
 .logo-icon {
@@ -44,7 +44,7 @@
 }
 
 .navbar-menu li a:hover {
-  color: #10B981;
+  color: #20B2AA;
 }
 
 .navbar-menu li a::after {
@@ -54,7 +54,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: #10B981;
+  background: #20B2AA;
   transition: width 0.3s ease;
 }
 
@@ -67,7 +67,7 @@
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: #10B981;
+  color: #20B2AA;
   cursor: pointer;
 }
 
@@ -88,7 +88,7 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(32, 178, 170, 0.08);
   }
 
   .navbar-menu.active {
@@ -97,7 +97,7 @@
 
   .navbar-menu li {
     padding: 0.75rem 0;
-    border-bottom: 1px solid #E5E7EB;
+    border-bottom: 1px solid #E0F5F0;
   }
 
   .navbar-menu li:last-child {

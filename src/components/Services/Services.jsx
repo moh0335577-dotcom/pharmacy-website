@@ -20,28 +20,28 @@ const Services = () => {
       title: 'الأدوية',
       description: 'مجموعة شاملة من الأدوية الموثوقة والآمنة',
       icon: FaPills,
-      color: '#10B981',
+      color: '#20B2AA',
     },
     {
       id: 2,
       title: 'استشارات طبية',
       description: 'استشارات متخصصة من الصيادلة المؤهلين',
       icon: FaUserMd,
-      color: '#3B82F6',
+      color: '#7FD8BE',
     },
     {
       id: 3,
       title: 'قياس ضغط الدم',
       description: 'خدمة قياس ضغط الدم المجانية',
       icon: FaHeartbeat,
-      color: '#EF4444',
+      color: '#1E9B8E',
     },
     {
       id: 4,
       title: 'توصيل منزلي',
       description: 'توصيل سريع وآمن لباب منزلك',
       icon: FaTruck,
-      color: '#F59E0B',
+      color: '#008B8B',
     },
   ];
 
@@ -69,7 +69,7 @@ const Services = () => {
     <Section
       id="services"
       title="خدماتنا"
-      subtitle="نقدم لك أفضل الخدمات الصيدلية والاستشارات الطبية"
+      subtitle="نقدم لك أفضل الخدمات الصيدلية والاستشارات الطبية المتخصصة"
       light
     >
       <motion.div
